@@ -37,6 +37,14 @@
 - DATABASE_URL env var pointing to your PostgreSQL database
 
 ## Setup
-1. Clone repo 
-2. npm install or npm i to install dependencies and node modules
-3. Set DATABASE_URL and PORT in .env
+1. Clone repo git remote add origin https://github.com/alamehtab/Move37-Real-Time-Polling.git
+2. cd MOVE37-Real-Time-Polling
+3. npm install or npm i to install dependencies and node modules
+4. Set DATABASE_URL and PORT in .env
+- DATABASE_URL="postgresql://<username>:<password>@localhost:5432/postgres" (insert user and password)
+- PORT=4000
+5. Setup database prisma
+- npx prisma generate
+- npx prisma migrate dev --name init
+6. Start the server by running -- npm run dev
+
