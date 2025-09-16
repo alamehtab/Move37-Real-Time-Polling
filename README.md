@@ -18,18 +18,18 @@
 - Other: bcrypt, dotenv, cors
 
 # Folder Structure
-.
-├── prisma/
-│   └── schema.prisma
-├── src/
-│   ├── routes/
-│   │   ├── users.js
-│   │   ├── polls.j
-│   │   └── votes.js
-│   └── index.js
-├── .env
-├── package.json
-└── README.md
+- .
+- ├── prisma/
+- │   └── schema.prisma
+- ├── src/
+- │   ├── routes/
+- │   │   ├── users.js
+- │   │   ├── polls.j
+- │   │   └── votes.js
+- │   └── index.js
+- ├── .env
+- ├── package.json
+- └── README.md
 
 ## Requirements
 - Node.js 18+
