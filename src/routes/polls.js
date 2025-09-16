@@ -3,6 +3,7 @@ const express = require('express');
 module.exports = (prisma, io) => {
   const router = express.Router();
 
+  // creating polls to vote on
   router.post('/', async (req, res) => {
     try {
       const { question, creatorId, isPublished = false, options } = req.body;
@@ -29,6 +30,7 @@ module.exports = (prisma, io) => {
     }
   });
 
+    // getting polls by id
   router.get('/:id', async (req, res) => {
     const id = Number(req.params.id);
     try {
@@ -68,6 +70,7 @@ module.exports = (prisma, io) => {
     }
   });
 
+  // getting all polls
   router.get('/', async (req, res) => {
     try {
       const polls = await prisma.poll.findMany({

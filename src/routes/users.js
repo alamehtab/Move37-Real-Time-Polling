@@ -25,6 +25,7 @@ module.exports = (prisma) => {
     }
   });
 
+  // getting a user by id
   router.get('/:id', async (req, res) => {
     const id = Number(req.params.id);
     try {
